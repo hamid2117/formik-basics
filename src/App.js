@@ -12,7 +12,7 @@ import {
 } from '@material-ui/core'
 import './App.css'
 
-const TextFielde = ({ placeholder, ...prop }) => {
+const TextFielde = ({ placeholder, ...prop }) => {//make custum formike Feild
   const [field, meta] = useField(prop)
   const error = meta.error && meta.touched ? meta.error : ''
   return <TextField {...field} placeholder={placeholder} helperText={error} />
